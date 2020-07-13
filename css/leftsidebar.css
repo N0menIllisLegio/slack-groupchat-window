@@ -1,0 +1,144 @@
+/* LEFT SIDEBAR */
+
+#leftsidebar {
+	background: rgb(26, 23, 29);
+	color: rgb(150,149,143);
+	flex-basis: 15%;
+}
+
+.leftsidebar-header {
+	display: grid;
+	grid-template-areas: 
+    "workspaceName avatar"
+    "userName avatar";
+	grid-template-rows: 1fr 1fr;
+  	grid-template-columns: 1fr auto;
+  	grid-gap: 5px;
+}
+
+#avatar {
+	grid-area: avatar;
+	display: flex;
+	align-items: center;
+}
+
+.avatar {
+	color: black;
+	background: rgb(209,210,211);
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#workspaceName {
+	grid-area: workspaceName;
+	display: flex;
+	align-items: center;
+	color: rgb(209,210,211);
+}
+
+#workspaceName > span {
+	font-weight: bold;
+}
+
+#workspaceName > i {
+	font-size: 18px;
+}
+
+#userName {
+	grid-area: userName;
+	display: flex;
+	align-items: center;
+}
+
+#userName > span {
+	font-size: 13px;
+	margin-left: 5px;
+}
+
+#leftsidebar .list {
+	margin: 11px 0 11px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#leftsidebar .list-item {
+	display: flex;
+	align-items: center;
+	padding: 5px 0 5px 16px;
+}
+
+.light-back-on-hover:hover {
+	cursor: pointer;
+	background: rgb(39,36,44);
+}
+
+.light-color-on-hover:hover {
+	cursor: pointer;
+	color: rgb(200,201,203);
+}
+
+#leftsidebar .list-item > i {
+	font-size: 15px;
+	margin-right: 8px;
+}
+
+#leftsidebar .list-item > div {
+	font-size: 15px;
+	margin-right: 11px;
+	margin-left: 3px;
+}
+
+.unread {
+	font-weight: bold;
+	color: rgb(209,210,211);
+}
+
+.highlighted {
+	cursor: pointer;
+	background: rgb(17,100,163);
+	color: rgb(209,210,211);
+}
+
+.section-header {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 18px 0px 5px 12px;
+}
+
+.section-header > i {
+	font-size: 20px;
+	margin-right: 8px;
+}
+
+.add-channel {
+	align-self: flex-end;
+	margin-left: auto;
+	border-radius: 10px;
+	padding: 8px;
+}
+
+.delete-button {
+	align-self: flex-end;
+	margin-left: auto;
+	font-size: 18px !important;
+	visibility: hidden;
+}
+
+.light-back-on-hover:hover .delete-button {
+	visibility: visible;
+}
+
+.dm-icons {
+	font-size: 12px !important;
+	color: rgb(42,172,118);;
+}
+
+.additional-info {
+	font-weight: 300;
+	color: rgb(122,121,125);
+}

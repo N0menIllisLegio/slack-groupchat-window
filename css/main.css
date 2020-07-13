@@ -1,0 +1,104 @@
+html { 
+	height: 100%; 
+}
+
+body {
+	height: 100%;
+	color: rgb(209,210,211);
+	font-family: Lato,appleLogo,sans-serif;
+	/*font-weight: 300;*/
+	margin: 0;
+}
+
+.header-row {
+	height: 46px;
+	padding: 16px;
+}
+
+.columnscontainer {
+	height: 100%;
+	display: flex;
+}
+
+
+/* TOOLTIP */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-color: rgb(54,51,56);
+}
+
+.tooltip .tooltiptext {
+  color: rgb(209,210,211);
+  font-family: Lato,appleLogo,sans-serif;
+  font-size: small;
+
+  visibility: hidden;
+  width: 160px;
+  background-color: #000000;
+
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000000 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* BORDERS */
+
+.border-right {
+	border-style: solid;
+	border-width: 0 1px 0 0;
+	border-color: rgb(43,42,49);
+}
+
+.border-bottom {
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: rgb(43,42,49);
+}
+
+
+
+/* RIGHT SIDEBAR */
+
+#rightsidebar {
+	background: rgb(25, 29, 33);
+	flex-basis: 25%;
+}
+
+/* CHANNDEL MESSAGES*/
+
+#middle {
+	background: rgb(25, 29, 33);
+	flex-basis: 60%;
+}
+
+.channel-messages {
+	overflow: auto;
+	height: 75%;
+}
