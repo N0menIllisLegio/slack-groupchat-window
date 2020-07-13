@@ -71,11 +71,6 @@
 	padding: 5px 0 5px 16px;
 }
 
-.light-back-on-hover:hover {
-	cursor: pointer;
-	background: rgb(39,36,44);
-}
-
 .light-color-on-hover:hover {
 	cursor: pointer;
 	color: rgb(200,201,203);

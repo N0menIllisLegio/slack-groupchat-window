@@ -21,6 +21,11 @@ body {
 }
 
 
+.light-back-on-hover:hover {
+  cursor: pointer;
+  background: rgb(39,36,44);
+}
+
 /* TOOLTIP */
 
 .tooltip {
@@ -68,6 +73,60 @@ body {
   opacity: 1;
 }
 
+
+
+/*DOWN*/
+
+/* Tooltip container */
+.tooltip-down {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip-down .tooltiptext-down {
+  visibility: hidden;
+  width: 160px;
+  font-family: Lato,appleLogo,sans-serif;
+  font-size: small;
+  background-color: black;
+  color: rgb(209,210,211);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+
+  top: 100%;
+  left: 50%; 
+  margin-left: -80px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip-down .tooltiptext-down::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip-down:hover .tooltiptext-down {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* BORDERS */
 
 .border-right {
@@ -89,16 +148,4 @@ body {
 #rightsidebar {
 	background: rgb(25, 29, 33);
 	flex-basis: 25%;
-}
-
-/* CHANNDEL MESSAGES*/
-
-#middle {
-	background: rgb(25, 29, 33);
-	flex-basis: 60%;
-}
-
-.channel-messages {
-	overflow: auto;
-	height: 75%;
 }

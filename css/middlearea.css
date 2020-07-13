@@ -1,0 +1,184 @@
+#middle {
+	background: rgb(25, 29, 33);
+	flex-basis: 60%;
+}
+
+.middle-header {
+	display: grid;
+	grid-template-areas: 
+    "channelName details"
+    "actions details";
+	grid-template-rows: 1fr 1fr;
+  	grid-template-columns: 1fr auto;
+  	grid-gap: 5px;
+}
+
+#channelName {
+	grid-area: channelName;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+#channelName > div > i {
+	font-size: 15px;
+}
+
+#channelName > i {
+	font-size: 15px;
+	margin-right: 4px;
+}
+
+#channelName > span {
+	margin-right: 6px;
+}
+
+#channelName > .star-button {
+	display: flex;
+	border-radius: 5px;
+	padding: 1px;
+	justify-content: center;
+	align-items: center;
+}
+
+#actions {
+	grid-area: actions;
+	display: flex;
+	align-items: center;
+	color: rgb(150,149,143);
+}
+
+#actions > .people {
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+#actions > .people > i {
+	font-size: 13px;
+	margin-right: 3px;
+}
+
+#actions > .pins {
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	font-weight: 300;
+
+	border-style: solid;
+	border-width: 0 .1px 0 .1px;
+	border-color: rgb(150,149,143);
+
+	margin: 0 5px 0 5px;
+	padding: 0 5px 0 5px;
+}
+
+#actions > .pins > i {
+	font-size: 13px;
+	margin-right: 3px;
+}
+
+
+#actions > .topic {
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.channel-messages {
+	overflow: auto;
+	height: 75%;
+}
+
+#actions > .link:hover {
+	cursor: pointer;
+	color: rgb(29,149,201);
+}
+
+#details {
+	grid-area: details;
+	display: flex;
+	align-items: center;
+}
+
+#details > div {
+	display: flex;
+	border-radius: 5px;
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+}
+
+#middle-footer{
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.writing-area {
+	background: rgb(33,37,41);
+	flex-grow: 1;
+	color: rgb(122,123,125);
+
+	border-style: solid;
+	border-width: .1px;
+	border-color: rgb(86,88,86);
+	border-radius: 5px;
+}
+
+.writing-area > .message-actions {
+	margin: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.writing-area > .message-actions > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.writing-area > .message-actions > div > i, .writing-area > .message-actions > div > div > i {
+	margin: 0px 5px 0 5px;
+	font-size: 20px;
+}
+
+.writing-area > .message {
+	margin: 15px 10px 18px 18px;
+}
+
+.inactive {
+	padding: 3px 0 3px 0;
+	color: rgb(62,64,68);
+}
+
+.shortcuts {
+	padding: 5px;
+	border-radius: 5px;
+	margin-right: 0px !important;
+}
+
+.shortcuts:hover {
+	cursor: pointer;
+	background: rgb(20,100,163);
+}
+
+.bold-format {
+	border-style: solid;
+	border-width: 0 0 0 .1px;
+	border-color: rgb(86,88,86);
+	padding-left: 5px;
+	margin-left: 0px !important;
+}
+
+.active {
+	padding: 3px 0 3px 0;
+	border-radius: 5px;
+}
+
+.active:hover{
+	cursor: pointer;
+	background: rgb(41,45,48);
+}
