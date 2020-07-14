@@ -47,3 +47,131 @@
 	padding: 0 10px 0 10px;
 	justify-content: center;
 }
+
+#details-area > .writing-area {
+	margin: 8px 24px 8px 16px;
+}
+
+/*MESSAGE*/
+
+.message-container {
+	padding: 8px 24px 8px 16px;
+	position: relative;
+}
+
+.message {
+	display: grid;
+	grid-template-areas: 
+    "messageAvatar messageHeader"
+    "messageAvatar messageContent";
+	grid-template-rows: auto 1fr;
+  	grid-template-columns: auto 1fr;
+}
+
+.message-container:hover {
+	background: rgb(33,37,41);
+}
+
+.message-avatar {
+	grid-area: messageAvatar;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-top: 4px;
+}
+
+.message-avatar:hover {
+	cursor: pointer;
+}
+
+.message-header {
+	grid-area: messageHeader;
+	display: inline-flex;
+	align-items: center;
+}
+
+.message-content {
+	grid-area: messageContent;
+	color: #D1D2D3;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.message-username {
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.message-username:hover, .message-time:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.message-time {
+	font-size: 12px;
+	font-weight: 300;
+	color: #ABABAD;
+}
+
+
+.reply-devider {
+	display: flex;
+	align-items: center;
+}
+
+.reply-devider > span {
+	font-size: 13px;
+	font-weight: 300;
+	color: rgba(232,232,232,0.7);
+	margin-left: 16px;
+}
+
+.reply-devider > hr {
+	flex: 1;
+	border: none;
+	height:0.5px;
+	margin-right: 36px;
+	margin-left: 12px;
+	background: #9a9c9e;
+}
+
+.hide {
+	display: none;
+	border-color: rgb(43,42,49);
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	background: rgb(25, 29, 33);
+	align-items: center;
+
+	
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+.message:hover + .hide, .hide:hover {
+	display: inline-flex;
+}
+
+
+.hide > div {
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+}
+
+.hide > div:hover {
+	cursor: pointer;
+	background: rgb(39,36,44);
+}
+
+.hide > div > i {
+	font-size: 18px;
+}
+
+.hide > .customize {
+	border-style: solid;
+	border-width: 0 .1px 0 .1px;
+	border-color: rgb(150,149,143);
+}
