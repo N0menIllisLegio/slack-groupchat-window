@@ -101,14 +101,9 @@
 	grid-area: details;
 	display: flex;
 	align-items: center;
-}
-
-#details > div {
-	display: flex;
 	border-radius: 5px;
-	padding: 5px;
+	padding: 0 10px 0 10px;
 	justify-content: center;
-	align-items: center;
 }
 
 #middle-footer{

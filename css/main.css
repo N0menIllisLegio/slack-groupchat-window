@@ -140,12 +140,3 @@ body {
 	border-width: 0 0 1px 0;
 	border-color: rgb(43,42,49);
 }
-
-
-
-/* RIGHT SIDEBAR */
-
-#rightsidebar {
-	background: rgb(25, 29, 33);
-	flex-basis: 25%;
-}

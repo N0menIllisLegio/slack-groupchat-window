@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/leftsidebar.css">
 	<link rel="stylesheet" href="css/middlearea.css">
+	<link rel="stylesheet" href="css/rightsidebar.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -123,11 +124,9 @@
 					Add a topic
 				</div>
 			</div>
-			<div id="details">
-				<div class="light-back-on-hover tooltip-down">
-					<span class="tooltiptext-down">Show channel details</span>
-					<i class="material-icons">info</i>
-				</div>
+			<div id="details"class="light-back-on-hover tooltip-down">
+				<span class="tooltiptext-down">Show channel details</span>
+				<i class="material-icons">info</i>
 			</div>
 		</div>
 
@@ -237,7 +236,14 @@
 	</div>
 
 	<aside id="rightsidebar">
-		<div class="border-bottom header-row">current thread name</div>
+		<div class="border-bottom header-row right-header">
+			<div id="title">Thread</div>
+			<div id="subtitle"><i class="material-icons">lock</i><span>task2</span></div>
+			<div id="close-button" class="light-back-on-hover tooltip-down">
+				<span class="tooltiptext-down">Close</span>
+				<i class="material-icons">close</i>
+			</div>
+		</div>
 		<div> thread's messages</div>
 	</aside>
 </div>
