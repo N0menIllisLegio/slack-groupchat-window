@@ -48,6 +48,11 @@
 	justify-content: center;
 }
 
+#details-area {
+	overflow: auto;
+	height: calc(100% - 80px);
+}
+
 #details-area > .writing-area {
 	margin: 8px 24px 8px 16px;
 }
