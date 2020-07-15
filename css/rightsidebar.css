@@ -87,6 +87,7 @@
 	grid-area: messageHeader;
 	display: inline-flex;
 	align-items: center;
+	margin-bottom: 3px;
 }
 
 .message-content {
