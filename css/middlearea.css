@@ -178,3 +178,70 @@
 	cursor: pointer;
 	background: rgb(41,45,48);
 }
+
+
+
+/*Messages*/
+
+.grayout{
+	color: #ABABAD !important;
+}
+
+/*Reply*/
+
+.message-reply {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	width: 600px;
+}
+
+.message-reply > i {
+	visibility: hidden;
+	font-size: 13px;
+	color: #ABABAD;
+}
+
+.message-reply:hover {
+	cursor: pointer;
+
+	border-style: solid;
+	border-width: .1px;
+	border-color: rgb(86,88,86);
+	border-radius: 5px;
+	padding: 2px;
+}
+
+.message-reply:hover > i{
+	visibility: visible;
+}
+
+.message-reply:hover > .message-reply-content > span {
+	display:none;
+}
+
+.message-reply:hover > .message-reply-content:before {
+	content: 'View thread';
+}
+
+.message-reply-avatar {
+	border-radius: 5px;
+	margin-left: 3px;
+}
+
+.message-reply-count {
+	margin-left: 3px;
+	color: #1D9BD1;
+	font-size: 13px;
+}
+
+.message-reply-count:hover {
+	text-decoration: underline;
+}
+
+.message-reply-content {
+	margin-left: 5px;
+	color: #ABABAD;
+	font-size: 13px;
+	flex: 1;
+}
