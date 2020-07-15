@@ -327,3 +327,47 @@
 	position: relative;
 	margin-right: auto;
 }
+
+.timeline {
+	border: none;
+	height:0.5px;
+	background: #9a9c9e;
+}
+
+.sticky-yesterday {
+	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+  	top: 22px;
+  	z-index: 3;
+
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.sticky-yesterday:hover {
+	cursor: pointer;
+}
+
+.sticky-yesterday > div {
+	border-radius: 25px;
+	border-style: solid;
+	border-width: .1px;
+	border-color: rgb(86,88,86);
+	padding: 5px 10px 5px 10px;
+	background: rgb(25, 29, 33);
+
+	color: #D1D2D3;
+	font-size: 13px;
+
+	display: flex;
+	align-items: center;
+}
+
+.sticky-yesterday > div > i {
+	font-size: 13px;
+	color: #D1D2D3;
+	margin-left: 5px;
+}
+
+
