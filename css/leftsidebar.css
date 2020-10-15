@@ -141,4 +141,5 @@
 .leftsidebar-scroll {
 	overflow: auto;
 	height: calc(100% - 80px);
+	overflow-x: hidden;
 }
